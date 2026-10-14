@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhD Application Season 2027</title>
+<meta name="description" content="Deadlines, start terms and funding for 110 fully funded computer science and AI PhD programs worldwide, for 2027 entry. Sorted soonest first, with progress tracking.">
+<meta property="og:title" content="PhD Application Season 2027">
+<meta property="og:description" content="Deadlines, start terms and funding for 110 fully funded CS/AI PhD programs worldwide, soonest first.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2f3fb8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f3fb8'/%3E%3Crect x='14' y='18' width='36' height='32' rx='4' fill='none' stroke='white' stroke-width='4'/%3E%3Cpath d='M14 28h36M24 12v10M40 12v10' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">CS / AI · fully funded · 2027 entry</div>
+  <h1>PhD Application Season 2027</h1>
+  <p class="sub"><span id="count">44</span> programs across the US, UK &amp; Europe, Canada, Asia, the Middle East and Australia. The soonest open deadline is always at the top and closed ones move to the bottom. Each row shows the start term each deadline is for and every term the program admits in, plus a working plan that backs your own dates off them. Countdowns use your device clock; each deadline is shown in the university's own time zone.</p>
+
+  <div class="strip" id="strip"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tab-programs" aria-selected="true">Deadlines</button>
+    <button class="tab" role="tab" id="tab-plan" aria-selected="false">My plan</button>
+  </div>
+
+  <section id="view-programs">
+    <div class="filters" id="filters"></div>
+    <div id="list"></div>
+  </section>
+
+  <section id="view-plan" hidden>
+    <div class="plan" id="plan"></div>
+  </section>
+
+  <div class="savebar">
+    <p class="save" id="saveNote">Loading your saved progress…</p>
+    <div class="tools">
+      <button type="button" class="chip" id="exportBtn">Export progress</button>
+      <label class="chip" for="importFile">Import progress</label>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+  </div>
+
+  <div class="foot">
+    <strong>How sure is each date?</strong>
+    <div class="legend">
+      <span class="tag">Confirmed</span><span style="align-self:center">the official page lists the 2026–27 date</span>
+    </div>
+    <div class="legend">
+      <span class="tag">Annual date</span><span style="align-self:center">the official page gives a fixed yearly date without naming the year</span>
+    </div>
+    <div class="legend">
+      <span class="tag v-lastcycle">Check date</span><span style="align-self:center">only last cycle's date or an unofficial source was found; confirm before you plan around it</span>
+    </div>
+    <p><strong>Start terms.</strong> "Starts" is the term that row's deadline is for. The outlined tag lists every term the program admits in: <strong>Fall</strong> starts July–October; <strong>Spring</strong> starts January–April (called Winter in Canada, Lent at Cambridge, Semester 2 in Singapore); <strong>Summer</strong> starts May–June (Waterloo calls this its Spring term); <strong>Flexible</strong> means you agree a start date with your advisor or the start depends on the funding round. "Other terms not listed" means the program's page only shows the term given, so ask the department before assuming a spring start. Most US PhD programs admit in Fall only.</p>
+    <p>Funding: green means PhD admits are normally funded; amber means you compete for a separate scholarship or position. UK fees for overseas students are high (Oxford lists £36,260/yr for 2027–28), so only treat a UK offer as real once funding is confirmed. Dates last checked <span id="updated"></span>. Always confirm a deadline on the university's own page before you submit.</p>
+  </div>
+</div>
+<noscript><p style="padding:16px">This tracker needs JavaScript to show the deadlines.</p></noscript>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
